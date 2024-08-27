@@ -16,6 +16,7 @@
 		F24627012C7D834800566E3A /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */; };
 		F24627032C7D838F00566E3A /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627022C7D838F00566E3A /* CIImage+Extension.swift */; };
 		F24627052C7D85E900566E3A /* DetectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627042C7D85E900566E3A /* DetectionModel.swift */; };
+		F24627072C7D9D1500566E3A /* YOLOv3 model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,7 @@
 		F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
 		F24627022C7D838F00566E3A /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
 		F24627042C7D85E900566E3A /* DetectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionModel.swift; sourceTree = "<group>"; };
-		F246270F2C7DD58400566E3A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "YOLOv3 model.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +47,6 @@
 		F24626E02C7D801900566E3A = {
 			isa = PBXGroup;
 			children = (
-				F246270F2C7DD58400566E3A /* README.md */,
 				F24626EB2C7D801900566E3A /* HelloObjectDetection */,
 				F24626EA2C7D801900566E3A /* Products */,
 			);
@@ -72,6 +72,7 @@
 				F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */,
 				F24627022C7D838F00566E3A /* CIImage+Extension.swift */,
 				F24626FC2C7D805A00566E3A /* VisionManager.swift */,
+				F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */,
 			);
 			path = HelloObjectDetection;
 			sourceTree = "<group>";
@@ -155,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24626EF2C7D801900566E3A /* ContentView.swift in Sources */,
+				F24627072C7D9D1500566E3A /* YOLOv3 model.mlmodel in Sources */,
 				F24626FD2C7D805A00566E3A /* VisionManager.swift in Sources */,
 				F24626FB2C7D805300566E3A /* CameraManager.swift in Sources */,
 				F24627032C7D838F00566E3A /* CIImage+Extension.swift in Sources */,
