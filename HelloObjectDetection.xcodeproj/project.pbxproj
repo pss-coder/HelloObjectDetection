@@ -11,6 +11,11 @@
 		F24626EF2C7D801900566E3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24626EE2C7D801900566E3A /* ContentView.swift */; };
 		F24626F12C7D801A00566E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24626F02C7D801A00566E3A /* Assets.xcassets */; };
 		F24626F42C7D801A00566E3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24626F32C7D801A00566E3A /* Preview Assets.xcassets */; };
+		F24626FB2C7D805300566E3A /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24626FA2C7D805300566E3A /* CameraManager.swift */; };
+		F24626FD2C7D805A00566E3A /* VisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24626FC2C7D805A00566E3A /* VisionManager.swift */; };
+		F24627012C7D834800566E3A /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */; };
+		F24627032C7D838F00566E3A /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627022C7D838F00566E3A /* CIImage+Extension.swift */; };
+		F24627052C7D85E900566E3A /* DetectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627042C7D85E900566E3A /* DetectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +29,7 @@
 		F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
 		F24627022C7D838F00566E3A /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
 		F24627042C7D85E900566E3A /* DetectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionModel.swift; sourceTree = "<group>"; };
-		F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "YOLOv3 model.mlmodel"; sourceTree = "<group>"; };
 		F246270F2C7DD58400566E3A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,11 @@
 				F24626EE2C7D801900566E3A /* ContentView.swift */,
 				F24626F02C7D801A00566E3A /* Assets.xcassets */,
 				F24626F22C7D801A00566E3A /* Preview Content */,
+				F24626FA2C7D805300566E3A /* CameraManager.swift */,
+				F24627042C7D85E900566E3A /* DetectionModel.swift */,
+				F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */,
+				F24627022C7D838F00566E3A /* CIImage+Extension.swift */,
+				F24626FC2C7D805A00566E3A /* VisionManager.swift */,
 			);
 			path = HelloObjectDetection;
 			sourceTree = "<group>";
@@ -147,7 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24626EF2C7D801900566E3A /* ContentView.swift in Sources */,
+				F24626FD2C7D805A00566E3A /* VisionManager.swift in Sources */,
+				F24626FB2C7D805300566E3A /* CameraManager.swift in Sources */,
+				F24627032C7D838F00566E3A /* CIImage+Extension.swift in Sources */,
+				F24627052C7D85E900566E3A /* DetectionModel.swift in Sources */,
 				F24626ED2C7D801900566E3A /* HelloObjectDetectionApp.swift in Sources */,
+				F24627012C7D834800566E3A /* CMSampleBuffer+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +297,7 @@
 				DEVELOPMENT_TEAM = ZZ96SLZRY4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app captures live feed to detect objects ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawandeeps.HelloObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawandeeps.HelloAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -313,6 +327,7 @@
 				DEVELOPMENT_TEAM = ZZ96SLZRY4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app captures live feed to detect objects ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawandeeps.HelloObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawandeeps.HelloAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
