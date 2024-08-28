@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F23B94612C7EEADF00319275 /* ARContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23B94602C7EEADF00319275 /* ARContentView.swift */; };
+		F23B94632C7F011B00319275 /* NodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23B94622C7F011B00319275 /* NodeManager.swift */; };
+		F23B94652C7F0EE700319275 /* yolov8s.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F23B94642C7F0EE700319275 /* yolov8s.mlpackage */; };
+		F23B94672C7F15AA00319275 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23B94662C7F15AA00319275 /* Plane.swift */; };
 		F24626ED2C7D801900566E3A /* HelloObjectDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24626EC2C7D801900566E3A /* HelloObjectDetectionApp.swift */; };
 		F24626EF2C7D801900566E3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24626EE2C7D801900566E3A /* ContentView.swift */; };
 		F24626F12C7D801A00566E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24626F02C7D801A00566E3A /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F23B94602C7EEADF00319275 /* ARContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContentView.swift; sourceTree = "<group>"; };
+		F23B94622C7F011B00319275 /* NodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeManager.swift; sourceTree = "<group>"; };
+		F23B94642C7F0EE700319275 /* yolov8s.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8s.mlpackage; sourceTree = "<group>"; };
+		F23B94662C7F15AA00319275 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		F24626E92C7D801900566E3A /* HelloObjectDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloObjectDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24626EC2C7D801900566E3A /* HelloObjectDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloObjectDetectionApp.swift; sourceTree = "<group>"; };
 		F24626EE2C7D801900566E3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +78,8 @@
 				F24626F02C7D801A00566E3A /* Assets.xcassets */,
 				F24626F22C7D801A00566E3A /* Preview Content */,
 				F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */,
+				F23B94642C7F0EE700319275 /* yolov8s.mlpackage */,
+				F23B94662C7F15AA00319275 /* Plane.swift */,
 			);
 			path = HelloObjectDetection;
 			sourceTree = "<group>";
@@ -86,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F24626EE2C7D801900566E3A /* ContentView.swift */,
+				F23B94602C7EEADF00319275 /* ARContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 				F24626FA2C7D805300566E3A /* CameraManager.swift */,
 				F24627042C7D85E900566E3A /* DetectionModel.swift */,
 				F24626FC2C7D805A00566E3A /* VisionManager.swift */,
+				F23B94622C7F011B00319275 /* NodeManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,11 +194,15 @@
 				F24626EF2C7D801900566E3A /* ContentView.swift in Sources */,
 				F24627072C7D9D1500566E3A /* YOLOv3 model.mlmodel in Sources */,
 				F24626FD2C7D805A00566E3A /* VisionManager.swift in Sources */,
+				F23B94612C7EEADF00319275 /* ARContentView.swift in Sources */,
 				F24626FB2C7D805300566E3A /* CameraManager.swift in Sources */,
+				F23B94652C7F0EE700319275 /* yolov8s.mlpackage in Sources */,
 				F24627032C7D838F00566E3A /* CIImage+Extension.swift in Sources */,
 				F24627052C7D85E900566E3A /* DetectionModel.swift in Sources */,
 				F24626ED2C7D801900566E3A /* HelloObjectDetectionApp.swift in Sources */,
 				F24627012C7D834800566E3A /* CMSampleBuffer+Extension.swift in Sources */,
+				F23B94672C7F15AA00319275 /* Plane.swift in Sources */,
+				F23B94632C7F011B00319275 /* NodeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
