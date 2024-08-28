@@ -11,14 +11,15 @@ import Vision
 
 class DetectionModel: ObservableObject {
 	
-	private let cameraManager = CameraManager()
 	
+	private let cameraManager = CameraManager()
 	private let visionManager = VisionManager()
 	
 	@Published var currentFrame: CGImage?
 	@Published var isCameraRunning: Bool = true
 	
 	@Published var observations: [VNRecognizedObjectObservation] = []
+	
 	
 	init() {
 		Task {
@@ -42,9 +43,7 @@ class DetectionModel: ObservableObject {
 			}
 		}
 	}
-	
-	
-	
+
 	func stopCamera() {
 		cameraManager.stopSession()
 		isCameraRunning = false

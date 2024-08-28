@@ -41,21 +41,22 @@ struct ContentView: View {
 							
 							let observation = detectionModel.observations[index]
 							
+							// get borders
 							let (text, confidence, boxSize, boxPosition) = detectionModel.processObservation(observation, for: imageSize)
 							
+							// draw border around detected item
 							RoundedRectangle(cornerRadius: 8)
-														.stroke(.black, style: .init(lineWidth: 4.0))
-														.overlay(alignment: .topLeading, content: {
-															Text("\(text): \(confidence)")
-																.background(.white)
-																.foregroundColor(.blue)
-																.offset(y: -28)
-														})
+								.stroke(.black, style: .init(lineWidth: 4.0))
+								.overlay(alignment: .topLeading, content: {
+									Text("\(text): \(confidence)")
+										.background(.white)
+										.foregroundColor(.blue)
+										.offset(y: -28)
+								})
 //														.background(.white)
-														.frame(width: boxSize.width, height: boxSize.height)
-														.position(boxPosition)
-							
-						}
+								.frame(width: boxSize.width, height: boxSize.height)
+								.position(boxPosition)
+						} // end ForEach
 					}
 			} else {
 				Text("No Camera Feed")

@@ -64,14 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				F24626EC2C7D801900566E3A /* HelloObjectDetectionApp.swift */,
-				F24626EE2C7D801900566E3A /* ContentView.swift */,
+				F24627122C7ED14600566E3A /* Views */,
+				F24627132C7ED15F00566E3A /* Models */,
+				F24627142C7ED17300566E3A /* Extensions */,
 				F24626F02C7D801A00566E3A /* Assets.xcassets */,
 				F24626F22C7D801A00566E3A /* Preview Content */,
-				F24626FA2C7D805300566E3A /* CameraManager.swift */,
-				F24627042C7D85E900566E3A /* DetectionModel.swift */,
-				F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */,
-				F24627022C7D838F00566E3A /* CIImage+Extension.swift */,
-				F24626FC2C7D805A00566E3A /* VisionManager.swift */,
 				F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */,
 			);
 			path = HelloObjectDetection;
@@ -83,6 +80,33 @@
 				F24626F32C7D801A00566E3A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F24627122C7ED14600566E3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F24626EE2C7D801900566E3A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F24627132C7ED15F00566E3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F24626FA2C7D805300566E3A /* CameraManager.swift */,
+				F24627042C7D85E900566E3A /* DetectionModel.swift */,
+				F24626FC2C7D805A00566E3A /* VisionManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F24627142C7ED17300566E3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */,
+				F24627022C7D838F00566E3A /* CIImage+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
