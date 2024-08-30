@@ -18,7 +18,6 @@ struct ContentView: View {
 	
 	@State private var imageSize: CGSize = .zero
 
-	
     var body: some View {
         VStack {
             // Camera

@@ -16,9 +16,9 @@ class CameraManager: NSObject {
 	private var deviceInput: AVCaptureDeviceInput?
 	// 3. object used to have access to video frames for processing
 	private var videoOutput: AVCaptureVideoDataOutput?
-	// 4.
+	// 4. type of media to request capture
 	private let systemPreferredCamera = AVCaptureDevice.default(for: .video)
-	// 5. queue on which callback should be invoked, must have label
+	// 5. queue on which callback should be invoked, must have a unique label;for debugging
 	private var sessionQueue = DispatchQueue(label: "video.preview.session")
 	
 	

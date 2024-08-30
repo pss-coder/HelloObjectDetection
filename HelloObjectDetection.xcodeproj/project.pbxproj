@@ -15,8 +15,11 @@
 		F24626FD2C7D805A00566E3A /* VisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24626FC2C7D805A00566E3A /* VisionManager.swift */; };
 		F24627012C7D834800566E3A /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */; };
 		F24627032C7D838F00566E3A /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627022C7D838F00566E3A /* CIImage+Extension.swift */; };
-		F24627052C7D85E900566E3A /* DetectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627042C7D85E900566E3A /* DetectionModel.swift */; };
+		F24627052C7D85E900566E3A /* ObjectDetectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24627042C7D85E900566E3A /* ObjectDetectionModel.swift */; };
 		F24627072C7D9D1500566E3A /* YOLOv3 model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */; };
+		F2601F3A2C8053D800EDFE6E /* HandModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F2601F392C8053D700EDFE6E /* HandModel.mlmodel */; };
+		F2601F3C2C8053E700EDFE6E /* SemanticSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2601F3B2C8053E700EDFE6E /* SemanticSegmentView.swift */; };
+		F2601F3E2C8055BB00EDFE6E /* HandDetectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2601F3D2C8055BB00EDFE6E /* HandDetectorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +32,11 @@
 		F24626FC2C7D805A00566E3A /* VisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionManager.swift; sourceTree = "<group>"; };
 		F24627002C7D834800566E3A /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
 		F24627022C7D838F00566E3A /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
-		F24627042C7D85E900566E3A /* DetectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionModel.swift; sourceTree = "<group>"; };
+		F24627042C7D85E900566E3A /* ObjectDetectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionModel.swift; sourceTree = "<group>"; };
 		F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "YOLOv3 model.mlmodel"; sourceTree = "<group>"; };
+		F2601F392C8053D700EDFE6E /* HandModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandModel.mlmodel; sourceTree = "<group>"; };
+		F2601F3B2C8053E700EDFE6E /* SemanticSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticSegmentView.swift; sourceTree = "<group>"; };
+		F2601F3D2C8055BB00EDFE6E /* HandDetectorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandDetectorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +73,9 @@
 				F24627122C7ED14600566E3A /* Views */,
 				F24627132C7ED15F00566E3A /* Models */,
 				F24627142C7ED17300566E3A /* Extensions */,
+				F2601F3F2C819E0400EDFE6E /* ML Models */,
 				F24626F02C7D801A00566E3A /* Assets.xcassets */,
 				F24626F22C7D801A00566E3A /* Preview Content */,
-				F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */,
 			);
 			path = HelloObjectDetection;
 			sourceTree = "<group>";
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F24626EE2C7D801900566E3A /* ContentView.swift */,
+				F2601F3B2C8053E700EDFE6E /* SemanticSegmentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,8 +100,9 @@
 		F24627132C7ED15F00566E3A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2601F3D2C8055BB00EDFE6E /* HandDetectorManager.swift */,
 				F24626FA2C7D805300566E3A /* CameraManager.swift */,
-				F24627042C7D85E900566E3A /* DetectionModel.swift */,
+				F24627042C7D85E900566E3A /* ObjectDetectionModel.swift */,
 				F24626FC2C7D805A00566E3A /* VisionManager.swift */,
 			);
 			path = Models;
@@ -107,6 +115,15 @@
 				F24627022C7D838F00566E3A /* CIImage+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2601F3F2C819E0400EDFE6E /* ML Models */ = {
+			isa = PBXGroup;
+			children = (
+				F24627062C7D9D1500566E3A /* YOLOv3 model.mlmodel */,
+				F2601F392C8053D700EDFE6E /* HandModel.mlmodel */,
+			);
+			path = "ML Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +201,11 @@
 				F24626FD2C7D805A00566E3A /* VisionManager.swift in Sources */,
 				F24626FB2C7D805300566E3A /* CameraManager.swift in Sources */,
 				F24627032C7D838F00566E3A /* CIImage+Extension.swift in Sources */,
-				F24627052C7D85E900566E3A /* DetectionModel.swift in Sources */,
+				F24627052C7D85E900566E3A /* ObjectDetectionModel.swift in Sources */,
+				F2601F3A2C8053D800EDFE6E /* HandModel.mlmodel in Sources */,
 				F24626ED2C7D801900566E3A /* HelloObjectDetectionApp.swift in Sources */,
+				F2601F3C2C8053E700EDFE6E /* SemanticSegmentView.swift in Sources */,
+				F2601F3E2C8055BB00EDFE6E /* HandDetectorManager.swift in Sources */,
 				F24627012C7D834800566E3A /* CMSampleBuffer+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
